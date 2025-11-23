@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --font-rubik: var(--font-rubik), sans-serif;
+}
+
+:root {
+  --color-primary: #344C36;     /* hijau tua */
+  --color-accent: #F9AD1B;      /* kuning */
+  --color-background: #F6EFDD;  /* krem */
+  --color-danger: #F0603D;      /* oranye */
+  --color-black: #000000;       /* hitam */
+  --color-white: #FFFFFF;       /* putih */
+}
+
+.font-rubik {
+  font-family: var(--font-rubik);
+}
+
+/* Motif grid kotak halus */
+.bg-grid-pattern {
+  background-color: var(--color-background);
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite; 
+}
+
+/* Base Reveal Styles */
+.reveal {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.show {
+  opacity: 1;
+}
+
+/* Fade Up */
+.fade-up {
+  transform: translateY(60px);
+}
+
+.fade-up.show {
+  transform: translateY(0);
+}
+
+/* Fade Down */
+.fade-down {
+  transform: translateY(-60px);
+}
+
+.fade-down.show {
+  transform: translateY(0);
+}
+
+/* Fade Left */
+.fade-left {
+  transform: translateX(-60px);
+}
+
+.fade-left.show {
+  transform: translateX(0);
+}
+
+/* Fade Right */
+.fade-right {
+  transform: translateX(60px);
+}
+
+.fade-right.show {
+  transform: translateX(0);
+}
+
+/* Scale Up */
+.scale-up {
+  transform: scale(0.8);
+}
+
+.scale-up.show {
+  transform: scale(1);
+}
+
+/* Rotate In */
+.rotate-in {
+  transform: rotate(-10deg) scale(0.9);
+}
+
+.rotate-in.show {
+  transform: rotate(0) scale(1);
+}
+
+/* Zoom In */
+.zoom-in {
+  transform: scale(0.5);
+}
+
+.zoom-in.show {
+  transform: scale(1);
+}
+
+/* Delays */
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+.delay-5 {
+  transition-delay: 0.5s;
+}
