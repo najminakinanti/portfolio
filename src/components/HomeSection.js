@@ -55,13 +55,13 @@ export default function HomeSection() {
       {/* Left Section */}
       <div className="col-span-12 md:col-span-7 flex flex-col items-start justify-center order-2 mr-12 md:order-1">
         <ScrollReveal animation="fade-up" once={false}>
-          <h1 className="text-3xl md:text-7xl font-extrabold mb-4 text-[var(--color-primary)]">
-            Hi,<br />I'm Anti!
+          <h1 className="text-2xl md:text-3xl lg:text-5xl font-extrabold mb-4 text-[var(--color-primary)]">
+            Hi,<br />I'm Najmina Kinanti!
           </h1>
         </ScrollReveal>
 
         <ScrollReveal animation="fade-up" once={false}>
-          <h3 className="text-[var(--color-accent)] text-base md:text-4xl font-extrabold mb-6">
+          <h3 className="text-[var(--color-accent)] text-xl md:text-xl lg:text-4xl font-extrabold mb-6">
             Software Engineer Student
           </h3>
         </ScrollReveal>

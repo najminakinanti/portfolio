@@ -1,3 +1,4 @@
+// page.js
 "use client";
 import PillNav from "../components/PillNav/PillNav";
 import HomeSection from "@/components/HomeSection";
@@ -17,7 +18,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen overflow-x-hidden scroll-smooth text-[--color-black] font-rubik">
-      {/* Navbar */}
       <header className="fixed top-0 w-full bg-[--color-background] z-20">
         <div className="container mx-auto flex justify-center">
           <PillNav
@@ -33,8 +33,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Sections */}
-      <main className="container mx-auto">
+      <main>
         <HomeSection />
         <AboutSection />
         <ToolsSection />
