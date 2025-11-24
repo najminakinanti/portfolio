@@ -68,7 +68,7 @@ export default function HomeSection() {
 
         <ScrollReveal animation="fade-up" once={false}>
           <a
-            href="/aaa.pdf"
+            href="/cv/cv.pdf"
             download
             className="w-full md:w-auto inline-flex items-center justify-center border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-semibold py-3 px-6 rounded-full bg-transparent hover:bg-[var(--color-primary)] hover:text-[var(--color-background)] transition-colors duration-300 mb-20 md:mb-0"
           >
